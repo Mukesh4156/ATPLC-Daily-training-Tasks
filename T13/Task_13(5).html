@@ -1,0 +1,26 @@
+
+<!Doctype html> 
+<html> 
+
+<head> 
+<title> JS-T13.5 </title> 
+<head> 
+
+<body> 
+
+
+<script> 
+function roundToDigits(num, digits) {
+  const factor = 10 ** digits;
+  return Math.round(num * factor) / factor;
+}
+
+const number = 4.153212512;
+const digits = 4;
+const result = roundToDigits(number, digits);
+
+console.log(result);
+document.write(result);
+</script>
+</body>
+</html>
