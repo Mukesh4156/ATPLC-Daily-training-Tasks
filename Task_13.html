@@ -1,0 +1,72 @@
+
+<!Doctype html> 
+<html> 
+
+<head> 
+<title> JS-T13 </title> 
+<head> 
+
+<body> 
+
+
+<script> 
+
+
+let name= prompt("Enter your name");
+let address= prompt("Enter your Address");
+
+console.log("Name:" +name);
+console.log("Address:" +address);
+
+
+
+
+const var1 = prompt("Enter a number");
+const var2 = prompt("Enter another number");
+
+if (var1 === var2) {
+  console.log("The value and data type of var1 and var2 are the same.");
+} else {
+  console.log("The value and/or data type of var1 and var2 are different.");
+}
+
+
+
+
+const string1 = "java";
+const string2 = "Script";
+const result = string1.toUpperCase() + " " + string2.toUpperCase();
+
+console.log(result);
+document.write(result);
+
+
+
+
+const str = prompt("Enter something in text");
+const bytes = new TextEncoder().encode(str).length;
+
+console.log(bytes);
+document.write(bytes);
+
+
+
+
+function roundToDigits(num, digits) {
+  const factor = 10 ** digits;
+  return Math.round(num * factor) / factor;
+}
+
+const number = 4.153212512;
+const digits = 4;
+const result1 = roundToDigits(number, digits);
+
+console.log(result1);
+document.write(result1);
+
+</script>
+
+
+</body>
+
+</html>
